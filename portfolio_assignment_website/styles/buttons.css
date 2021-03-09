@@ -1,0 +1,33 @@
+button {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #000000;
+    font-size: 25px;
+    padding: 20px;
+    width:fit-content;
+    min-width: 130px;
+    background-color: #FCFF7A;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    margin: 20px 0;
+ }
+
+ button.a {
+     color: #000000;
+ }
+ 
+ button:hover {
+    background: #feffb9;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+ }
+
+ button a {
+     color: #000000;
+ }

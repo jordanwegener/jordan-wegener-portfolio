@@ -1,0 +1,147 @@
+:root {
+    --nav-height:70px;
+    --footer-height: 70px;
+}
+
+body {
+    background-color: darkslategray;
+    background-image: url(../res/triangles.png);
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+strong {
+    color: #FCFF7A;
+}
+
+h1 {
+   font-size: 1.5em;
+   text-align: center; 
+}
+
+h2 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    font-size: 1em;
+}
+
+p {
+    text-align: center;
+}
+
+#current-location {
+    /* text-shadow: 1px 1px #2b2b2b; */
+    color:rgba(255, 255, 255, 0.5)
+}
+
+a:active {
+    color: #4b4b4b;
+}
+
+a:hover {
+    color: #e0e0e0;
+}
+
+.body-container {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - (var(--nav-height) + var(--footer-height)));
+    /* colour for debugging */
+    /* background: rgba(255, 0, 200, 0.25); */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landing-blurb-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    width: fit-content;
+    max-width: 900px;
+    min-height: fit-content;
+    max-height: 30em;
+    border-radius: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 50px;
+}
+
+.landing-blurb-container-child {
+    max-width: 50%;
+}
+
+.about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+    width: fit-content;
+    max-width: 900px;
+    height: 400px;
+    border-radius: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 50px;
+}
+
+.about-me-container-child {
+    max-width: 50%;
+}
+
+.getintouch-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: fit-content;
+    max-width: 900px;
+    min-height: fit-content;
+    max-height: 30em;
+    border-radius: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.25);
+    margin: 50px;
+}
+
+@media only screen and (max-width: 950px) {
+    .landing-blurb-container {
+        flex-wrap: nowrap;
+        margin: 5%;
+        max-width: 400px;
+    }
+
+    #landing-blurb-tag {
+        display: none;
+    }
+
+    .landing-blurb-container-child {
+        max-width: 90%;
+    }
+
+    .about-me-container {
+        flex-wrap: nowrap;
+        height: auto;
+        max-width: 600px;
+        margin: 5%;
+    }
+
+    .about-me-container-child {
+        max-width: 90%;
+    }
+}

@@ -17,7 +17,7 @@
         <div class="nav-middle">
           <a class="nav-a" href="./about.html">about me</a>
           <a class="nav-a" href="./projects.html">projects</a>
-          <a class="nav-a" href="./contact.html">contact</a>
+          <a class="nav-a" href="./getintouch.html" id="current-location">contact</a>
           <a class="nav-a" href="./blog.html">blog</a>
         </div>
         <div class="nav-right">
@@ -34,20 +34,20 @@
     <main>
       <div class="body-container">
         <div class="getintouch-container">
-          <h1>Get in touch with me</h1>
-          <p>
+          <h1 class="getintouch-container-child"><strong>Get in touch with me</strong></h1>
+          <p class="getintouch-container-child">
             Please fill out the form below if you'd like to get in touch about
             building a website, professional opportunities or just to say hello!
           </p>
-          <form>
+          <form id="contact-form" class="getintouch-container-child">
             <ul id="form-list">
               <li>
-                <input type="text" id="name" value="Your name" size="40" />
+                <input type="text" id="name" placeholder="Your name" size="30" required/>
               </li>
               <li>
-                <input type="text" id="email" value="Your email" size="40" />
+                <input type="text" id="email" placeholder="Your email" size="30" required/>
               </li>
-              <li><textarea id="message" rows="5" cols="5">Your message</textarea></li>
+              <li><textarea id="message" rows="8" cols="50" placeholder="Your message" required></textarea></li>
               <li>
                 <button><a href="#">send</a></button>
               </li>

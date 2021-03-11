@@ -20,8 +20,7 @@
 @media only screen and (max-width: 950px) {
     #home-portrait {
         order: -1;
-        /* max-width: 60%;
-        max-height: 300px; */
+        max-width: 200px;
     }
 
     #about-me-portrait {

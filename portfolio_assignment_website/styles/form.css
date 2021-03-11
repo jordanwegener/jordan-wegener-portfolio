@@ -1,5 +1,15 @@
 input {
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type="text"], textarea {
+  display:inline-block;
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #form-list {
@@ -7,22 +17,25 @@ input {
 }
 
 #name {
-  width: 70%;
+  width: 90%;
   margin:auto;
 }
 
 #email {
-  width: 70%;
+  width: 90%;
   margin:auto;
 }
 
 #message {
-  width: 70%;
+  width: 90%;
   resize: none;
+  margin: auto;
 }
 
 @media only screen and (max-width: 950px) {
-    #message {
+    #message, #name, #email {
         width: 90%;
     }
+
+
 }

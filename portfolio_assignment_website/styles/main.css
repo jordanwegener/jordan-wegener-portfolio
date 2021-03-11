@@ -1,7 +1,12 @@
+/* Global variables */
+
 :root {
     --nav-height:70px;
     --footer-height: 70px;
+    --container-background: rgba(0, 0, 0, 0.5);
 }
+
+/* General/reused components */
 
 body {
     background-color: darkslategray;
@@ -61,6 +66,24 @@ a:hover {
     align-items: center;
 }
 
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    width: fit-content;
+    max-width: 900px;
+    min-height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    background: var(--container-background);
+    margin: 50px;
+}
+
+/* Landing page */
+
 .landing-blurb-container {
     display: flex;
     flex-wrap: wrap;
@@ -74,13 +97,15 @@ a:hover {
     max-height: 30em;
     border-radius: 15px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--container-background);
     margin: 50px;
 }
 
 .landing-blurb-container-child {
     max-width: 50%;
 }
+
+/* About me page */
 
 .about-me-container {
     display: flex;
@@ -94,13 +119,15 @@ a:hover {
     height: 450px;
     border-radius: 15px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--container-background);
     margin: 50px;
 }
 
 .about-me-container-child {
     max-width: 50%;
 }
+
+/* Get in touch page */
 
 .getintouch-container {
     display: flex;
@@ -116,7 +143,7 @@ a:hover {
     /* max-height: 30em; */
     border-radius: 15px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.25);
+    background: var(--container-background);
     margin: 50px;
 }
 
@@ -124,13 +151,105 @@ a:hover {
     max-width: 90%;
 }
 
-.project-container {
+/* Projects page */
 
+.project-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    width: fit-content;
+    max-width: 90%px;
+    min-height: fit-content;
+    /* max-height: 30em; */
+    border-radius: 15px;
+    padding: 20px;
+    background: var(--container-background);
+    margin: 10px;
 }
 
 .project-container-child {
     
 }
+
+.project-image {
+    width: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-title {
+    padding-bottom: 120px;
+    padding-top: 10px;
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.5789473684210527) 23%, rgba(255,255,255,0) 61%);
+}
+
+.project-blurb {
+    width: 60%;
+    padding: 20px;
+}
+
+#project-1 {
+    background-image: url(../res/project-1.png);
+}
+
+#project-2 {
+    background-image: url(../res/project-2.png);
+}
+
+#project-3 {
+    background-image: url(../res/project-3.png);
+}
+
+#projects-body {
+    flex-direction: column;
+}
+
+/* Blog page */
+
+.post-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    width: fit-content;
+    max-width: 90%px;
+    min-height: fit-content;
+    /* max-height: 30em; */
+    border-radius: 15px;
+    padding: 20px;
+    background: var(--container-background);
+    margin: 10px;
+}
+
+.post-title {
+    width: 30%
+}
+
+.post-subcontainer {
+    margin: 30px;
+    width: 80%;
+}
+
+.post-summary {
+    text-align: justify;
+}
+
+.read-more {
+    color: #FCFF7A;
+    text-align: right;
+}
+
+
 
 @media only screen and (max-width: 950px) {
     .landing-blurb-container {
@@ -166,5 +285,55 @@ a:hover {
 
     .getintouch-container-child {
         max-width: 90%;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    #projects-content-container {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .project-image, .project-blurb {
+        width: 90%;
+    }
+
+    .content-container {
+        width: 90%;
+    }
+
+    #blog-content-container {
+        width: 95%;
+        margin: 0px;
+        border-radius: 0;
+    }
+
+    .post-container {
+        flex-direction: column;
+    }
+
+    .post-title, .post-subcontainer {
+        width: 90%;
+    }
+
+    .post-summary {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    p {
+        font-size: 80%;
+    }
+
+    h1 {
+        font-size: 120%;
+    }
+
+    button {
+        font-size: 80%;
     }
 }

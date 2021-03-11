@@ -1,33 +1,40 @@
 button {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    color: #000000;
-    font-size: 25px;
-    padding: 20px;
-    width:fit-content;
-    min-width: 130px;
-    background-color: #FCFF7A;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    border: none;
-    margin: 20px 0;
- }
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  color: #000000;
+  font-size: 25px;
+  padding: 20px;
+  width: fit-content;
+  min-width: 130px;
+  background-color: #fcff7a;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  margin: 20px 0;
+}
 
- button.a {
-     color: #000000;
- }
- 
- button:hover {
-    background: #feffb9;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    text-decoration: none;
- }
+button:hover {
+  background: #feffb9;
+  text-decoration: none;
+}
 
- button a {
-     color: #000000;
- }
+button a {
+  color: #000000;
+}
+
+@media only screen and (max-width: 500px) {
+  button a {
+    font-size: 70%;
+  }
+
+  button {
+    min-width: 80px;
+    padding: 10px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+}

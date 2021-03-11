@@ -10,10 +10,16 @@ input[type="text"], textarea {
   color: white;
   border-radius: 5px;
   padding: 5px;
+  border: none;
+  
 }
 
-#form-list {
-  list-style: none;
+.form-container {
+  display: flex;
+  height: 20em;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #name {
@@ -35,6 +41,11 @@ input[type="text"], textarea {
 @media only screen and (max-width: 950px) {
     #message, #name, #email {
         width: 90%;
+    }
+
+    .form-container {
+      margin: 0;
+      padding: 0;
     }
 
 

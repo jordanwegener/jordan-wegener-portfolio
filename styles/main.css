@@ -140,7 +140,6 @@ a:hover {
     width: fit-content;
     max-width: 900px;
     min-height: fit-content;
-    /* max-height: 30em; */
     border-radius: 15px;
     padding: 20px;
     background: var(--container-background);
@@ -278,9 +277,10 @@ a:hover {
     }
 
     .getintouch-container {
-        height: auto;
-        max-width: 600px;
-        margin: 5%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 
     .getintouch-container-child {

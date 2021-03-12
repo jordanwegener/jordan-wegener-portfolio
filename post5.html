@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="./index.html"
+            ><img class="logo" src="./res/Logo.png" alt="Logo"
+          /></a>
+          <a class="nav-a" href="./index.html">home</a>
+        </div>
+        <div class="nav-middle">
+          <a class="nav-a" href="./about.html">about me</a>
+          <a class="nav-a" href="./projects.html">projects</a>
+          <a class="nav-a" href="./getintouch.html">contact</a>
+          <a class="nav-a" href="./blog.html">blog</a>
+        </div>
+        <div class="nav-right">
+          <a
+            class="nav-a"
+            href="https://www.linkedin.com/in/jordan-wegener-dev/"
+            >LinkedIn</a
+          >
+          <a class="nav-a" href="https://github.com/jordanwegener">GitHub</a>
+        </div>
+        <div class="hamburger-container">
+          <button class="hamburger hamburger--vortex" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="hamburger-links">
+      <li><a href="./about.html">about me</a></li>
+      <li><a href="./projects.html">projects</a></li>
+      <li><a href="./getintouch.html">contact</a></li>
+      <li><a href="./blog.html" id="current-location">blog</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/jordan-wegener-dev/">LinkedIn</a>
+      </li>
+      <li><a href="https://github.com/jordanwegener">Github</a></li>
+    </ul>
+
+    <main>
+      <div class="body-container" id="blog-body">
+        <article class="single-post-container">
+          <h1 class="post-title" id="post-three">
+            List of things I'm anxious about - 1. Ruby
+          </h1>
+
+          <p class="single-post-text">
+            Illo cupiditate culpa qui ut laborum. Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Aperiam id animi autem veniam
+            voluptate nesciunt. Possimus voluptatum, repellendus reprehenderit
+            cupiditate sunt a placeat quis consectetur nihil reiciendis non
+            itaque, praesentium, veritatis sint. Est quo error quam recusandae
+            vero itaque praesentium ipsa? Cum a fugit iusto sed odit voluptatem
+            ratione similique.
+          </p>
+          <p class="single-post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            tempore nobis illum deserunt incidunt adipisci natus odit amet
+            dolorum mollitia magni odio reiciendis provident sunt ad, fugiat
+            unde non inventore.
+          </p>
+          <p class="single-post-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
+          <div>
+            <a class="back-to-blog" href="./blog.html">Back to blog</a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>© Jordan Wegener 2021</p>
+      </div>
+    </footer>
+
+    <script>
+      // Script to expand hamburger from https://jonsuh.com/hamburgers/
+
+      const hamburger = document.querySelector(".hamburger");
+      const links = document.querySelector(".hamburger-links");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        const isActive = hamburger.classList.contains("is-active");
+        if (isActive) {
+          links.style.display = "block";
+        } else {
+          links.style.display = "none";
+        }
+      });
+
+      // Script to hide hamburger in case user resizes viewport while hamburger menu is open
+
+      window.onresize = () => {
+        if (
+          window.innerWidth >= 950 &&
+          hamburger.classList.contains("is-active")
+        ) {
+          hamburger.classList.toggle("is-active");
+          links.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

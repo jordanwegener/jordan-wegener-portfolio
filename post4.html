@@ -54,33 +54,30 @@
     <main>
       <div class="body-container" id="blog-body">
         <article class="single-post-container">
-          <h1 class="post-title" id="post-one">
-            How I learned to stop worrying and love CSS
+          <h1 class="post-title" id="post-four">
+            The hunt for a chair that doesn't cause back pain
           </h1>
 
           <p class="single-post-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut unde
             culpa repellat officiis nam, eius ducimus, quidem praesentium fuga
-            neque omnis perferendis soluta? Similique expedita distinctio
-            officia error fugit temporibus ea minima commodi quasi iusto at,
-            accusantium tempore provident quia nulla ullam, reprehenderit
-            sapiente atque sit explicabo perferendis numquam magni qui. Illo
-            cupiditate culpa qui ut laborum dolorem eum fuga unde ipsa odit
-            laudantium deserunt ullam ab, quibusdam deleniti vel itaque
-            accusantium vero harum blanditiis architecto amet optio? Illum quos
-            officia, deserunt nesciunt fugiat labore.
+            neque omnis perferendis soluta?
           </p>
           <p class="single-post-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
             tempore nobis illum deserunt incidunt adipisci natus odit amet
             dolorum mollitia magni odio reiciendis provident sunt ad, fugiat
-            unde non inventore, molestias laboriosam quo commodi consectetur.
-            Consectetur repellat id nemo quam voluptate provident tenetur iusto
-            at, repudiandae harum, quae quaerat distinctio! Lorem, ipsum dolor
-            sit amet consectetur adipisicing elit. Nobis, asperiores! Maiores,
-            dicta! Tenetur tempora aperiam aliquid sapiente, perferendis dolores
-            ipsum voluptatum odio harum quidem minima porro hic cum facere
-            voluptas.
+            unde non inventore. Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Corrupti, incidunt. Dicta optio maxime tenetur
+            quo. Pariatur ad dolore asperiores earum fuga quae. Eum illo beatae
+            quam repellat voluptatibus tenetur? Unde! Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Sed odit debitis placeat
+            laudantium harum reiciendis, consectetur quasi veritatis dolore nam
+            quia culpa nulla perferendis ullam ipsa consequuntur nisi. Laborum
+            inventore consectetur quos possimus, aliquam illo tempore iusto
+            itaque, quisquam est sapiente corrupti ut architecto excepturi,
+            dolorum dolor? Nesciunt illo voluptas recusandae a cupiditate rerum
+            debitis, velit perspiciatis sit nam aspernatur?
           </p>
           <p class="single-post-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
@@ -88,14 +85,12 @@
             omnis tenetur facere asperiores in provident quod fuga quos! Facilis
             nam natus consequatur similique aliquid doloribus iure corporis
             voluptate optio asperiores ut reprehenderit, itaque expedita tempora
-            quam voluptatibus! Sunt earum deserunt quisquam maxime temporibus
-            atque labore culpa minima, facere, eveniet, necessitatibus
-            consequuntur.
+            quam voluptatibus! Sunt earum deserunt quisquam maxime.
           </p>
-            <div>
-                <a class="back-to-blog" href="./blog.html">Back to blog</a>
-            </div>
-            </article>
+          <div>
+            <a class="back-to-blog" href="./blog.html">Back to blog</a>
+          </div>
+        </article>
       </div>
     </main>
 
@@ -106,31 +101,31 @@
     </footer>
 
     <script>
-        // Script to expand hamburger from https://jonsuh.com/hamburgers/
-  
-        const hamburger = document.querySelector(".hamburger");
-        const links = document.querySelector(".hamburger-links");
-        hamburger.addEventListener("click", function () {
+      // Script to expand hamburger from https://jonsuh.com/hamburgers/
+
+      const hamburger = document.querySelector(".hamburger");
+      const links = document.querySelector(".hamburger-links");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        const isActive = hamburger.classList.contains("is-active");
+        if (isActive) {
+          links.style.display = "block";
+        } else {
+          links.style.display = "none";
+        }
+      });
+
+      // Script to hide hamburger in case user resizes viewport while hamburger menu is open
+
+      window.onresize = () => {
+        if (
+          window.innerWidth >= 950 &&
+          hamburger.classList.contains("is-active")
+        ) {
           hamburger.classList.toggle("is-active");
-          const isActive = hamburger.classList.contains("is-active");
-          if (isActive) {
-            links.style.display = "block";
-          } else {
-            links.style.display = "none";
-          }
-        });
-  
-        // Script to hide hamburger in case user resizes viewport while hamburger menu is open
-  
-        window.onresize = () => {
-          if (
-            window.innerWidth >= 950 &&
-            hamburger.classList.contains("is-active")
-          ) {
-            hamburger.classList.toggle("is-active");
-            links.style.display = "none";
-          }
-        };
-      </script>
+          links.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

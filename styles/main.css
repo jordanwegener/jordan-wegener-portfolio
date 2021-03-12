@@ -8,6 +8,16 @@
 
 /* General/reused components */
 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 body {
     background-color: darkslategray;
     background-image: url(../res/triangles.png);
@@ -58,6 +68,8 @@ a:hover {
 
 .body-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     min-height: calc(100vh - (var(--nav-height) + var(--footer-height)));
     /* colour for debugging */
@@ -112,7 +124,7 @@ a:hover {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     align-content: space-between;
     width: fit-content;
     max-width: 900px;
@@ -125,6 +137,11 @@ a:hover {
 
 .about-me-container-child {
     max-width: 50%;
+}
+
+.about-me-container a {
+    color: #FCFF7A;
+    font-size: 1.2em;
 }
 
 /* Get in touch page */
@@ -148,6 +165,8 @@ a:hover {
 
 .getintouch-container-child {
     max-width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* Projects page */
@@ -246,6 +265,7 @@ a:hover {
 .read-more {
     color: #FCFF7A;
     text-align: right;
+    margin-top: 10px;
 }
 
 
@@ -267,24 +287,27 @@ a:hover {
 
     .about-me-container {
         flex-wrap: nowrap;
-        height: auto;
+        height: fit-content;
         max-width: 600px;
         margin: 5%;
     }
 
     .about-me-container-child {
         max-width: 90%;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     .getintouch-container {
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        border-radius: 0;
+        max-width: 90%;
+        height: 500px;
+        margin: 5%;
     }
 
     .getintouch-container-child {
         max-width: 90%;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     .project-container {

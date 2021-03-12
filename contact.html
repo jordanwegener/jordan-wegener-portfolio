@@ -30,8 +30,26 @@
           >
           <a class="nav-a" href="https://github.com/jordanwegener">GitHub</a>
         </div>
+        <div class="hamburger-container">
+          <button class="hamburger hamburger--vortex" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
       </div>
     </nav>
+
+    <ul class="hamburger-links">
+      <li><a href="./about.html">about me</a></li>
+      <li><a href="./projects.html">projects</a></li>
+      <li><a href="./contact.html">contact</a></li>
+      <li><a href="./blog.html">blog</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/jordan-wegener-dev/">LinkedIn</a>
+      </li>
+      <li><a href="https://github.com/jordanwegener">Github</a></li>
+    </ul>
 
     <main>
       <div class="body-container"></div>
@@ -42,5 +60,19 @@
         <p>© Jordan Wegener 2021</p>
       </div>
     </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const links = document.querySelector(".hamburger-links");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        const isActive = hamburger.classList.contains("is-active");
+        if (isActive) {
+          links.style.display = "block";
+        } else {
+          links.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>

@@ -17,8 +17,13 @@
   align-items: center;
   width: 15%;
   justify-content: flex-start;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
+
+.logo {
+    max-height: 3.3em;
+    margin-right: 0;
+  }
 
 .nav-middle {
   display: flex;
@@ -26,7 +31,7 @@
   justify-content: space-evenly;
   padding-left: 150px;
   padding-right: 150px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
 }
 
 .nav-right {
@@ -35,7 +40,7 @@
   width: 15%;
   justify-content: flex-end;
   flex-wrap: nowrap;
-  background-color: rgb(226, 43, 98);
+  /* background-color: rgb(226, 43, 98); */
 }
 
 .hamburger-container {
@@ -61,7 +66,11 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .nav-right {
+  .nav-left {
+      padding-left: 10px;
+  }
+  
+    .nav-right {
     display: none;
   }
 
@@ -71,13 +80,8 @@
 
   .hamburger-container {
       display: block;
+      padding-right: 10px;
   }
 
   }
-}
-
-@media only screen and (min-width: 950px) {
-    .hamburger-links {
-        display: none;
-    }
 }

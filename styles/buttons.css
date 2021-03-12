@@ -25,6 +25,10 @@ button a {
   color: #000000;
 }
 
+.hamburger {
+  background: transparent;
+}
+
 @media only screen and (max-width: 500px) {
   button a {
     font-size: 70%;

@@ -254,6 +254,9 @@ a:hover {
 
 .post-title {
   width: 30%;
+  padding: 40px;
+  max-width: 70%;
+  border-radius: 15px; 
 }
 
 .post-subcontainer {
@@ -271,10 +274,39 @@ a:hover {
   margin-top: 10px;
 }
 
+/* Blog single post page */
+
+.single-post-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  max-width: 900px;
+  min-height: fit-content;
+  /* max-height: 30em; */
+  border-radius: 15px;
+  padding: 20px;
+  background: var(--container-background);
+  margin: 10px;
+}
+
+.back-to-blog {
+  color: #fcff7a;
+  text-align: right;
+  margin-top: 10px;
+}
+
+.single-post-text {
+  margin: 20px;
+  text-align: justify;
+}
+
 @media only screen and (max-width: 950px) {
-  body {
+  /* #landing-body, #about-me-body {
     overflow: hidden;
-  }
+  } */
 
   .landing-blurb-container {
     flex-wrap: nowrap;

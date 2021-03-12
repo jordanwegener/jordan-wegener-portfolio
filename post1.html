@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="nav-left">
+          <a href="./index.html"
+            ><img class="logo" src="./res/Logo.png" alt="Logo"
+          /></a>
+          <a class="nav-a" href="./index.html">home</a>
+        </div>
+        <div class="nav-middle">
+          <a class="nav-a" href="./about.html">about me</a>
+          <a class="nav-a" href="./projects.html">projects</a>
+          <a class="nav-a" href="./getintouch.html">contact</a>
+          <a class="nav-a" href="./blog.html">blog</a>
+        </div>
+        <div class="nav-right">
+          <a
+            class="nav-a"
+            href="https://www.linkedin.com/in/jordan-wegener-dev/"
+            >LinkedIn</a
+          >
+          <a class="nav-a" href="https://github.com/jordanwegener">GitHub</a>
+        </div>
+        <div class="hamburger-container">
+          <button class="hamburger hamburger--vortex" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="hamburger-links">
+      <li><a href="./about.html">about me</a></li>
+      <li><a href="./projects.html">projects</a></li>
+      <li><a href="./getintouch.html">contact</a></li>
+      <li><a href="./blog.html" id="current-location">blog</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/jordan-wegener-dev/">LinkedIn</a>
+      </li>
+      <li><a href="https://github.com/jordanwegener">Github</a></li>
+    </ul>
+
+    <main>
+      <div class="body-container" id="blog-body">
+        <article class="single-post-container">
+          <h1 class="post-title" id="post-one">
+            How I learned to stop worrying and love CSS
+          </h1>
+
+          <p class="single-post-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut unde
+            culpa repellat officiis nam, eius ducimus, quidem praesentium fuga
+            neque omnis perferendis soluta? Similique expedita distinctio
+            officia error fugit temporibus ea minima commodi quasi iusto at,
+            accusantium tempore provident quia nulla ullam, reprehenderit
+            sapiente atque sit explicabo perferendis numquam magni qui. Illo
+            cupiditate culpa qui ut laborum dolorem eum fuga unde ipsa odit
+            laudantium deserunt ullam ab, quibusdam deleniti vel itaque
+            accusantium vero harum blanditiis architecto amet optio? Illum quos
+            officia, deserunt nesciunt fugiat labore.
+          </p>
+          <p class="single-post-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+            tempore nobis illum deserunt incidunt adipisci natus odit amet
+            dolorum mollitia magni odio reiciendis provident sunt ad, fugiat
+            unde non inventore, molestias laboriosam quo commodi consectetur.
+            Consectetur repellat id nemo quam voluptate provident tenetur iusto
+            at, repudiandae harum, quae quaerat distinctio! Lorem, ipsum dolor
+            sit amet consectetur adipisicing elit. Nobis, asperiores! Maiores,
+            dicta! Tenetur tempora aperiam aliquid sapiente, perferendis dolores
+            ipsum voluptatum odio harum quidem minima porro hic cum facere
+            voluptas.
+          </p>
+          <p class="single-post-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+            totam, unde labore laudantium odio distinctio, aliquid eius mollitia
+            omnis tenetur facere asperiores in provident quod fuga quos! Facilis
+            nam natus consequatur similique aliquid doloribus iure corporis
+            voluptate optio asperiores ut reprehenderit, itaque expedita tempora
+            quam voluptatibus! Sunt earum deserunt quisquam maxime temporibus
+            atque labore culpa minima, facere, eveniet, necessitatibus
+            consequuntur.
+          </p>
+            <div>
+                <a class="back-to-blog" href="./blog.html">Back to blog</a>
+            </div>aa 
+            </article>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <p>© Jordan Wegener 2021</p>
+      </div>
+    </footer>
+
+    <script>
+        // Script to expand hamburger from https://jonsuh.com/hamburgers/
+  
+        const hamburger = document.querySelector(".hamburger");
+        const links = document.querySelector(".hamburger-links");
+        hamburger.addEventListener("click", function () {
+          hamburger.classList.toggle("is-active");
+          const isActive = hamburger.classList.contains("is-active");
+          if (isActive) {
+            links.style.display = "block";
+          } else {
+            links.style.display = "none";
+          }
+        });
+  
+        // Script to hide hamburger in case user resizes viewport while hamburger menu is open
+  
+        window.onresize = () => {
+          if (
+            window.innerWidth >= 950 &&
+            hamburger.classList.contains("is-active")
+          ) {
+            hamburger.classList.toggle("is-active");
+            links.style.display = "none";
+          }
+        };
+      </script>
+  </body>
+</html>

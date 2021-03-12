@@ -12,6 +12,10 @@
   border: solid white 5px;
 }
 
+#post-one-img {
+    max-width: 50%;
+}
+
 @media only screen and (max-width: 950px) {
   #home-portrait {
     order: -1;

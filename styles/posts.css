@@ -1,0 +1,29 @@
+#post-one {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../res/blog/blog1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#post-two {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../res/blog/blog2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#post-three {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../res/blog/blog3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#post-four {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../res/blog/blog4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#post-five {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../res/blog/blog5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

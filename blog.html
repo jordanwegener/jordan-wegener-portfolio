@@ -56,7 +56,7 @@
         <div class="content-container" id="blog-content-container">
           <h1><strong>Blog</strong></h1>
           <article class="post-container">
-            <h1 class="post-title">
+            <h1 class="post-title" id="post-one">
               How I learned to stop worrying and love CSS
             </h1>
             <div class="post-subcontainer">
@@ -73,13 +73,15 @@
                 amet optio? Illum quos officia, deserunt nesciunt fugiat labore.
               </p>
               <p class="read-more">
-                <a class="read-more" href="#">Read more</a>
+                <a class="read-more" href="./post1.html">Read more</a>
               </p>
             </div>
           </article>
 
           <article class="post-container">
-            <h1 class="post-title">The Ballmer Peak: an investigative essay</h1>
+            <h1 class="post-title" id="post-two">
+              The Ballmer Peak: an investigative essay
+            </h1>
             <div class="post-subcontainer">
               <p class="post-summary">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -101,7 +103,9 @@
           </article>
 
           <article class="post-container">
-            <h1 class="post-title">My CSS 3.0 wish list (please read W3C)</h1>
+            <h1 class="post-title" id="post-three">
+              My CSS 3.0 wish list (please read W3C)
+            </h1>
             <div class="post-subcontainer">
               <p class="post-summary">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -109,6 +113,46 @@
                 commodi quibusdam reiciendis maiores doloribus expedita hic ipsa
                 corrupti qui aperiam, porro accusamus a? Quasi, blanditiis.
                 Cumque eveniet dolor rerum sed fuga, at ipsam repudiandae?
+              </p>
+              <p class="read-more">
+                <a class="read-more" href="#">Read more</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="post-container">
+            <h1 class="post-title" id="post-four">
+              The hunt for a chair that doesn't cause back pain
+            </h1>
+            <div class="post-subcontainer">
+              <p class="post-summary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Recusandae error facere, alias in animi hic atque eius
+                reiciendis repudiandae unde laboriosam minus numquam,
+                dignissimos explicabo sint suscipit deleniti amet incidunt quam
+                similique? Ipsum magni explicabo obcaecati architecto recusandae
+                ea eligendi voluptatibus libero, perspiciatis labore non
+                suscipit voluptatem vel quam, quibusdam unde neque. Corporis
+                deleniti rerum sequi saepe ducimus eveniet ratione? Fuga
+                aliquid, nobis dignissimos tempore eligendi debitis dolorum
+                laboriosam rem?
+              </p>
+              <p class="read-more">
+                <a class="read-more" href="#">Read more</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="post-container">
+            <h1 class="post-title" id="post-five">
+              List of things I'm anxious about - 1. Ruby
+            </h1>
+            <div class="post-subcontainer">
+              <p class="post-summary">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Dignissimos architecto est pariatur earum voluptatum iste
+                commodi quibusdam reiciendis maiores doloribus expedita hic ipsa
+                corrupti qui aperiam, porro accusamus a? Quasi, blanditiis.
               </p>
               <p class="read-more">
                 <a class="read-more" href="#">Read more</a>
@@ -126,6 +170,8 @@
     </footer>
 
     <script>
+      // Script to expand hamburger from https://jonsuh.com/hamburgers/
+
       const hamburger = document.querySelector(".hamburger");
       const links = document.querySelector(".hamburger-links");
       hamburger.addEventListener("click", function () {
@@ -137,6 +183,18 @@
           links.style.display = "none";
         }
       });
+
+      // Script to hide hamburger in case user resizes viewport while hamburger menu is open
+
+      window.onresize = () => {
+        if (
+          window.innerWidth >= 950 &&
+          hamburger.classList.contains("is-active")
+        ) {
+          hamburger.classList.toggle("is-active");
+          links.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>

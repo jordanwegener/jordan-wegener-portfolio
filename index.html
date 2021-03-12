@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>Jordan Wegener</title>
   </head>
-  <body>
+  <body id="landing-body">
     <nav>
       <div class="nav-container">
         <div class="nav-left">
@@ -86,6 +86,8 @@
     </footer>
 
     <script>
+      // Script to expand hamburger from https://jonsuh.com/hamburgers/
+
       const hamburger = document.querySelector(".hamburger");
       const links = document.querySelector(".hamburger-links");
       hamburger.addEventListener("click", function () {
@@ -97,6 +99,18 @@
           links.style.display = "none";
         }
       });
+
+      // Script to hide hamburger in case user resizes viewport while hamburger menu is open
+
+      window.onresize = () => {
+        if (
+          window.innerWidth >= 950 &&
+          hamburger.classList.contains("is-active")
+        ) {
+          hamburger.classList.toggle("is-active");
+          links.style.display = "none";
+        }
+      };
     </script>
   </body>
 </html>

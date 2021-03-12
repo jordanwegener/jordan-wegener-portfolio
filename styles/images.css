@@ -1,29 +1,29 @@
 #home-portrait {
-    border-radius: 100%;
-    max-width: 40%;
-    max-height: 90%;
-    border: solid white 5px;
+  border-radius: 100%;
+  max-width: 40%;
+  max-height: 90%;
+  border: solid white 5px;
 }
 
 #about-me-portrait {
-    border-radius: 15px;
-    max-width: 40%;
-    max-height: 90%;
-    border: solid white 5px;
+  border-radius: 15px;
+  max-width: 40%;
+  max-height: 90%;
+  border: solid white 5px;
 }
 
 .logo {
-    max-height: 3.5em;
-    margin-right: 0;
+  max-height: 3.5em;
+  margin-right: 0;
 }
 
 @media only screen and (max-width: 950px) {
-    #home-portrait {
-        order: -1;
-        max-width: 200px;
-    }
+  #home-portrait {
+    order: -1;
+    max-width: 200px;
+  }
 
-    #about-me-portrait {
-        display: none;
-    }
+  #about-me-portrait {
+    display: none;
+  }
 }

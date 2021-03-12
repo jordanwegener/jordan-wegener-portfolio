@@ -39,11 +39,11 @@
             Please fill out the form below if you'd like to get in touch about
             building a website, professional opportunities or just to say hello!
           </p>
-          <form id="contact-form" class="getintouch-container-child">
+          <form id="contact-form" class="getintouch-container-child" name="contact" method="POST" data-netlify="true">
             <div class=form-container>
-                <input type="text" id="name" placeholder="Your name" size="30" required/>
-                <input type="text" id="email" placeholder="Your email" size="30" required/>
-                <textarea id="message" rows="8" cols="50" placeholder="Your message" required></textarea></li>
+                <input type="text" id="name" name="name" placeholder="Your name" size="30" required/>
+                <input type="text" id="email" name="email" placeholder="Your email" size="30" required/>
+                <textarea id="message" name="message" rows="8" cols="50" placeholder="Your message" required></textarea></li>
                 <button><a href="#">send</a></button>
             </div>
           </form>

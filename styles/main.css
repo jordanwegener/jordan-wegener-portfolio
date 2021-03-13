@@ -340,24 +340,24 @@ a:hover {
     margin: 5px;
   }
 
-  .about-me-container {
+  #about-me-container {
     flex-wrap: nowrap;
     height: fit-content;
-    max-width: 600px;
+    max-width: 95%;
     margin: 5%;
   }
 
   .about-me-container-child {
     max-width: 90%;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   #about-me-portrait-description {
     display: none;
   }
 
-  .getintouch-container {
+  #getintouch-container {
     max-width: 90%;
     height: 500px;
     margin: 5%;

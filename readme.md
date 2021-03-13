@@ -3,6 +3,8 @@
 
 ## URL: https://boring-newton-301006.netlify.app/
 
+## Github repo: https://github.com/jordanwegener/portfolio_assignment
+
 ## Website Description
 
 ### Purpose
@@ -25,3 +27,23 @@ The website features:
 
 ### Screenshots
 
+![Index desktop](./index1.png)
+![Index mobile](./index2.png)
+![About me desktop](./aboutme1.png)
+![About me mobile](./aboutme2.png)
+![Projects desktop](./projects1.png)
+![Projects mobile](./projects2.png)
+![Contact desktop](./getintouch1.png)
+![Contact mobile](./getintouch2.png)
+![Blog desktop](./blog1.png)
+![Blog mobile](./blog2.png)
+![Blog post desktop](./blogpost1.png)
+![Blog post mobile](./blogpost2.png)
+
+### Target Audience
+
+The target audience for this website is primarily people looking to have a website built, potential employers and other developers.
+
+### Tech stack
+
+This website was built in HTML/CSS/Javascript. Testing was conducted using Chrome dev tools. Version control is carried out using Github. It is deployed via Netlify.

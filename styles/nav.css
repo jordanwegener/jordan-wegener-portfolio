@@ -25,9 +25,9 @@
 /* Logo is a reused graphical component (#2) */
 
 .logo {
-    max-height: 3.3em;
-    margin-top: 5px;
-  }
+  max-height: 3.3em;
+  margin-top: 5px;
+}
 
 /* Nav middle is hidden in mobile/tablet layout */
 
@@ -68,22 +68,21 @@
 }
 
 .hamburger-links li {
-    padding: 10px 15px;
-    margin: 5px 0px;
-    font-size: 1.2em;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-
+  padding: 10px 15px;
+  margin: 5px 0px;
+  font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
 }
 
 /* Hide components of nav bar that are not to be shown in tablet/mobile view */
 
 @media only screen and (max-width: 950px) {
   .nav-left {
-      padding-left: 10px;
+    padding-left: 10px;
   }
-  
-    .nav-right {
+
+  .nav-right {
     display: none;
   }
 
@@ -92,7 +91,7 @@
   }
 
   .hamburger-container {
-      display: block;
-      padding-right: 10px;
+    display: block;
+    padding-right: 10px;
   }
 }

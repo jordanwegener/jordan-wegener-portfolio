@@ -79,8 +79,6 @@ a:hover {
   justify-content: center;
   width: 100%;
   min-height: calc(100vh - (var(--nav-height) + var(--footer-height)));
-  /* colour for debugging */
-  /* background: rgba(255, 0, 200, 0.25); */
   justify-content: space-around;
   align-items: center;
 }
@@ -263,12 +261,13 @@ a:hover {
   width: fit-content;
   max-width: 90%px;
   min-height: fit-content;
-  /* max-height: 30em; */
   border-radius: 15px;
   padding: 20px;
   background: var(--container-background);
   margin: 10px;
 }
+
+/* Post title is a graphical component, with an image and a gradient/text overlay */
 
 .post-title {
   width: 30%;

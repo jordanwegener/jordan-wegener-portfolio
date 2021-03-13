@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jordan Wegener - Portfolio" />
+    <meta name="keywords" content="Web, developer, full, stack, portfolio" />
+    <meta name="author" content="Jordan Wegener" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>Jordan Wegener - About</title>
   </head>
@@ -34,7 +37,11 @@
         </div>
 
         <div class="hamburger-container">
-          <button class="hamburger hamburger--vortex" type="button">
+          <button
+            class="hamburger hamburger--vortex"
+            type="button"
+            aria-label="Hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -56,32 +63,40 @@
 
     <main>
       <div class="body-container">
-        <article class="about-me-container">
+        <article class="content-container" id="about-me-container">
           <h1 class="about-me-container-child">
-            Hi! My name is
-            <strong>Jordan Wegener. </strong>
-            I’m a full stack web developer.
+            My name is
+            <strong>Jordan Wegener </strong>
+            and I’m a full stack web developer.
           </h1>
           <p class="about-me-container-child">
             I’m currently studying at Coder Academy on campus in Melbourne. I
             decided to pivot into the tech industry after beginning a career as
-            a civil engineer. Not finding what I was looking for, I decided to
+            a civil engineer. I graduated from UniSA with a Bachelor of Civil
+            Engineering (Hons). Not finding what I was looking for, I decided to
             build a career around my interests in technology and good design.
           </p>
           <p class="about-me-container-child">
             My background in engineering gives me a unique advantage over
             similarly experienced developers with 4 years of intense practice in
             problem solving. By combining this with my abilities as a developer
-            and an eye for design, I’m able to deliver functional and beautiful
-            websites to take your product or organisation to new heights.
+            and an eye for design, I’m hope to deliver functional and beautiful
+            websites and web apps to future clients.
+          </p>
+
+          <p class="about-me-container-child">
+            Outside of web development, I'm an avid guitarist, bassist and
+            drummer and record music at home. I have also been known to enjoy PC
+            games, 4x4ing and photography.
           </p>
           <a href="./res/resume.pdf">View my resume</a>
           <img
             id="about-me-portrait"
             class="about-me-container-child"
             src="./res/me-on-the-pier.jpg"
-            alt="Photo of me"
+            alt="Photo of me and my puppy Kaiko"
           />
+          <p class="about-me-container-child" id="about-me-portrait-description"><i>Me and my puppy Kaiko</i></p>
         </article>
       </div>
     </main>

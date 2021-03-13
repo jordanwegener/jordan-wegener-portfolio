@@ -1,3 +1,5 @@
+/* Used this stylesheet to set up images */
+
 #home-portrait {
   border-radius: 100%;
   max-width: 40%;
@@ -13,8 +15,10 @@
 }
 
 #post-one-img {
-    max-width: 50%;
+  max-width: 50%;
 }
+
+/* A couple of responsive rules - home portrait gets reordered when the content is displayed in a single column, about me portrait disappears to maximise space for text.  */
 
 @media only screen and (max-width: 950px) {
   #home-portrait {

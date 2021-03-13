@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jordan Wegener - Portfolio" />
+    <meta name="keywords" content="Web, developer, full, stack, portfolio" />
+    <meta name="author" content="Jordan Wegener" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>Jordan Wegener - About</title>
   </head>
@@ -29,7 +32,11 @@
           <a class="nav-a" href="https://github.com/jordanwegener">GitHub</a>
         </div>
         <div class="hamburger-container">
-          <button class="hamburger hamburger--vortex" type="button">
+          <button 
+              class="hamburger hamburger--vortex" 
+              type="button" 
+              aria-label="Hamburger menu"
+            >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -51,7 +58,7 @@
 
     <main>
       <div class="body-container">
-        <div class="getintouch-container">
+        <div class="content-container" id="getintouch-container">
           <h1 class="getintouch-container-child"><strong>Get in touch with me</strong></h1>
           <p class="getintouch-container-child">
             Please fill out the form below if you'd like to get in touch about
@@ -62,7 +69,7 @@
                 <input type="text" id="name" name="name" placeholder="Your name" size="30" required/>
                 <input type="text" id="email" name="email" placeholder="Your email" size="30" required/>
                 <textarea id="message" name="message" rows="8" cols="50" placeholder="Your message" required></textarea></li>
-                <button><a href="#">send</a></button>
+                <button aria-label="Send message" name="Send message" id="send-button" onclick="change-button-text"><a href="#">send</a></button>
             </div>
           </form>
         </div>
@@ -102,5 +109,6 @@
         }
       };
     </script>
+
   </body>
 </html>

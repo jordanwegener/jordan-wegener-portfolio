@@ -1,3 +1,5 @@
+/* Nav bar is a component which contains several sub-components which help it to be more responsive */
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -6,10 +8,11 @@
   margin: 0;
   padding: 0;
   background: rgba(0, 0, 0, 0.15);
-  /* border: 1px solid white; */
   justify-content: space-between;
   flex-wrap: nowrap;
 }
+
+/* Nav left contains logo and home link and is always displayed */
 
 .nav-left {
   display: flex;
@@ -17,13 +20,16 @@
   align-items: center;
   width: 15%;
   justify-content: flex-start;
-  /* background-color: aqua; */
 }
+
+/* Logo is a reused graphical component (#2) */
 
 .logo {
     max-height: 3.3em;
-    margin-right: 0;
+    margin-top: 5px;
   }
+
+/* Nav middle is hidden in mobile/tablet layout */
 
 .nav-middle {
   display: flex;
@@ -31,8 +37,9 @@
   justify-content: space-evenly;
   padding-left: 150px;
   padding-right: 150px;
-  /* background-color: blueviolet; */
 }
+
+/* Nav right is also hidden in mobile/tablet layout */
 
 .nav-right {
   display: flex;
@@ -40,8 +47,9 @@
   width: 15%;
   justify-content: flex-end;
   flex-wrap: nowrap;
-  /* background-color: rgb(226, 43, 98); */
 }
+
+/* Hamburger is a component including both text and graphics - graphics #3 */
 
 .hamburger-container {
   display: none;
@@ -68,6 +76,8 @@
 
 }
 
+/* Hide components of nav bar that are not to be shown in tablet/mobile view */
+
 @media only screen and (max-width: 950px) {
   .nav-left {
       padding-left: 10px;
@@ -84,7 +94,5 @@
   .hamburger-container {
       display: block;
       padding-right: 10px;
-  }
-
   }
 }

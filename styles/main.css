@@ -8,6 +8,8 @@
 
 /* General/reused components */
 
+/* Set some parameters for all elements to prevent any weird stuff */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +19,8 @@
   vertical-align: baseline;
   background: transparent;
 }
+
+/* Set body parameters - also a graphical component */
 
 body {
   background-color: darkslategray;
@@ -53,8 +57,9 @@ p {
   text-align: center;
 }
 
+/* This makes the anchor of the current page on the navbar and hamburger to be darker to indicate to the user that this is their current location */
+
 #current-location {
-  /* text-shadow: 1px 1px #2b2b2b; */
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -65,6 +70,8 @@ a:active {
 a:hover {
   color: #e0e0e0;
 }
+
+/* Body container - contains everything between navbar and footer */
 
 .body-container {
   display: flex;
@@ -77,6 +84,8 @@ a:hover {
   justify-content: space-around;
   align-items: center;
 }
+
+/* General responsive content container for content of pages where specific rules aren't needed. These contain both images and text on various pages */
 
 .content-container {
   display: flex;
@@ -96,7 +105,7 @@ a:hover {
 
 /* Landing page */
 
-.landing-blurb-container {
+#landing-blurb-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -106,7 +115,7 @@ a:hover {
   width: fit-content;
   max-width: 900px;
   min-height: fit-content;
-  max-height: 30em;
+  max-height: 400px;
   border-radius: 15px;
   padding: 20px;
   background: var(--container-background);
@@ -115,11 +124,13 @@ a:hover {
 
 .landing-blurb-container-child {
   max-width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* About me page */
 
-.about-me-container {
+#about-me-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -128,7 +139,7 @@ a:hover {
   align-content: space-between;
   width: fit-content;
   max-width: 900px;
-  height: 450px;
+  height: 470px;
   border-radius: 15px;
   padding: 20px;
   background: var(--container-background);
@@ -139,14 +150,18 @@ a:hover {
   max-width: 50%;
 }
 
-.about-me-container a {
+#about-me-container a {
   color: #fcff7a;
   font-size: 1.2em;
 }
 
+#about-me-portrait-description {
+  color: #ffffffc2;
+}
+
 /* Get in touch page */
 
-.getintouch-container {
+#getintouch-container {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -171,6 +186,8 @@ a:hover {
 
 /* Projects page */
 
+/* Reusable project container which contains text - text component */
+
 .project-container {
   display: flex;
   flex-wrap: nowrap;
@@ -189,8 +206,7 @@ a:hover {
   margin: 10px;
 }
 
-.project-container-child {
-}
+/* Reusable project image component - image component */
 
 .project-image {
   width: 40%;
@@ -234,6 +250,8 @@ a:hover {
 
 /* Blog page */
 
+/* Blog post container - text component */
+
 .post-container {
   display: flex;
   flex-wrap: nowrap;
@@ -256,7 +274,7 @@ a:hover {
   width: 30%;
   padding: 40px;
   max-width: 70%;
-  border-radius: 15px; 
+  border-radius: 15px;
 }
 
 .post-subcontainer {
@@ -276,6 +294,8 @@ a:hover {
 
 /* Blog single post page */
 
+/* Single post container - text component */
+
 .single-post-container {
   display: flex;
   flex-wrap: nowrap;
@@ -285,7 +305,6 @@ a:hover {
   width: fit-content;
   max-width: 900px;
   min-height: fit-content;
-  /* max-height: 30em; */
   border-radius: 15px;
   padding: 20px;
   background: var(--container-background);
@@ -303,15 +322,14 @@ a:hover {
   text-align: justify;
 }
 
-@media only screen and (max-width: 950px) {
-  /* #landing-body, #about-me-body {
-    overflow: hidden;
-  } */
+/* I've opted to use the same layout with dynamically resizing components for tablet and mobile */
 
-  .landing-blurb-container {
+@media only screen and (max-width: 950px) {
+  #landing-blurb-container {
     flex-wrap: nowrap;
     margin: 5%;
     max-width: 400px;
+    max-height: fit-content;
   }
 
   #landing-blurb-tag {
@@ -320,6 +338,7 @@ a:hover {
 
   .landing-blurb-container-child {
     max-width: 90%;
+    margin: 5px;
   }
 
   .about-me-container {
@@ -333,6 +352,10 @@ a:hover {
     max-width: 90%;
     margin-top: 20px;
     margin-bottom: 15px;
+  }
+
+  #about-me-portrait-description {
+    display: none;
   }
 
   .getintouch-container {
@@ -385,6 +408,8 @@ a:hover {
     text-align: center;
   }
 }
+
+/* Some additional rules for smaller screens */
 
 @media only screen and (max-width: 500px) {
   p {

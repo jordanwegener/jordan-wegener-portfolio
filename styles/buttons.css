@@ -1,3 +1,5 @@
+/* Setting basic button style */
+
 button {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -25,9 +27,13 @@ button a {
   color: #000000;
 }
 
+/* Had to add this or the hamburger would inherit a yellow background. Ugly */
+
 .hamburger {
   background: transparent;
 }
+
+/* Making buttons responsive so they don't take up so much of mobile screens */
 
 @media only screen and (max-width: 500px) {
   button a {

@@ -1,3 +1,5 @@
+/* Footer is another component - contains only a little text but could contain other things if needed */
+
 .footer-container {
   display: flex;
   align-items: center;

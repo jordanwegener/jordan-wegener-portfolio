@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jordan Wegener - Portfolio" />
+    <meta name="keywords" content="Web, developer, full, stack, portfolio" />
+    <meta name="author" content="Jordan Wegener" />
     <link rel="stylesheet" type="text/css" href="./styles/style.css" />
     <title>Document</title>
   </head>
@@ -31,7 +34,11 @@
           <a class="nav-a" href="https://github.com/jordanwegener">GitHub</a>
         </div>
         <div class="hamburger-container">
-          <button class="hamburger hamburger--vortex" type="button">
+          <button
+            class="hamburger hamburger--vortex"
+            type="button"
+            aria-label="Hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -44,7 +51,7 @@
       <li><a href="./about.html">about me</a></li>
       <li><a href="./projects.html">projects</a></li>
       <li><a href="./getintouch.html">contact</a></li>
-      <li><a href="./blog.html" id="current-location">blog</a></li>
+      <li><a href="./blog.html">blog</a></li>
       <li>
         <a href="https://www.linkedin.com/in/jordan-wegener-dev/">LinkedIn</a>
       </li>
@@ -92,10 +99,10 @@
             atque labore culpa minima, facere, eveniet, necessitatibus
             consequuntur.
           </p>
-            <div>
-                <a class="back-to-blog" href="./blog.html">Back to blog</a>
-            </div>
-            </article>
+          <div>
+            <a class="back-to-blog" href="./blog.html">Back to blog</a>
+          </div>
+        </article>
       </div>
     </main>
 
@@ -106,31 +113,31 @@
     </footer>
 
     <script>
-        // Script to expand hamburger from https://jonsuh.com/hamburgers/
-  
-        const hamburger = document.querySelector(".hamburger");
-        const links = document.querySelector(".hamburger-links");
-        hamburger.addEventListener("click", function () {
+      // Script to expand hamburger from https://jonsuh.com/hamburgers/
+
+      const hamburger = document.querySelector(".hamburger");
+      const links = document.querySelector(".hamburger-links");
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
+        const isActive = hamburger.classList.contains("is-active");
+        if (isActive) {
+          links.style.display = "block";
+        } else {
+          links.style.display = "none";
+        }
+      });
+
+      // Script to hide hamburger in case user resizes viewport while hamburger menu is open
+
+      window.onresize = () => {
+        if (
+          window.innerWidth >= 950 &&
+          hamburger.classList.contains("is-active")
+        ) {
           hamburger.classList.toggle("is-active");
-          const isActive = hamburger.classList.contains("is-active");
-          if (isActive) {
-            links.style.display = "block";
-          } else {
-            links.style.display = "none";
-          }
-        });
-  
-        // Script to hide hamburger in case user resizes viewport while hamburger menu is open
-  
-        window.onresize = () => {
-          if (
-            window.innerWidth >= 950 &&
-            hamburger.classList.contains("is-active")
-          ) {
-            hamburger.classList.toggle("is-active");
-            links.style.display = "none";
-          }
-        };
-      </script>
+          links.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>

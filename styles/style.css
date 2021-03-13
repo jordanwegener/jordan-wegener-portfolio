@@ -1,3 +1,5 @@
+/* Import all style components */
+
 @import url("./nav.css");
 @import url("./footer.css");
 @import url("./main.css");
@@ -7,6 +9,8 @@
 @import url("./hamburger.css");
 @import url("./posts.css");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+
+/* A couple of rules to prevent weird stuff from happening */
 
 html,
 body {

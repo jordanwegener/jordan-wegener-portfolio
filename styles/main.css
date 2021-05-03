@@ -204,6 +204,10 @@ a:hover {
   margin: 10px;
 }
 
+.project-link {
+  color: #fcff7a;
+}
+
 /* Reusable project image component - image component */
 
 .project-image {

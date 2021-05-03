@@ -4,14 +4,14 @@
   border-radius: 100%;
   max-width: 40%;
   max-height: 90%;
-  border: solid white 5px;
+  border: solid white 3px;
 }
 
 #about-me-portrait {
-  border-radius: 15px;
+  border-radius: var(--border-radius);
   max-width: 40%;
   max-height: 90%;
-  border: solid white 5px;
+  border: solid white 3px;
 }
 
 #post-one-img {

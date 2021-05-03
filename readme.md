@@ -1,9 +1,6 @@
-# T1A2 - Portfolio - Jordan Wegener
+# If you are marking this assignment for Coder Academy still, please switch to the *ASSIGNMENT* branch!
+
 # Readme
-
-## URL: https://boring-newton-301006.netlify.app/
-
-## Github repo: https://github.com/jordanwegener/portfolio_assignment
 
 ## Website Description
 
@@ -19,26 +16,7 @@ The website features:
 - Responsive layout which scales well to desktop, tablet or mobile screens and makes efficient use of available screen real estate
 - A contact form to allow visitors to get in touch with me
 - A showcase of projects I've been involved in
-- A blog page with 5 post summaries which link to 5 individual full blog post pages
-
-### Sitemap
-
-![sitemap](./sitemap.png)
-
-### Screenshots
-
-![Index desktop](./index1.png)
-![Index mobile](./index2.png)
-![About me desktop](./aboutme1.png)
-![About me mobile](./aboutme2.png)
-![Projects desktop](./projects1.png)
-![Projects mobile](./projects2.png)
-![Contact desktop](./getintouch1.png)
-![Contact mobile](./getintouch2.png)
-![Blog desktop](./blog1.png)
-![Blog mobile](./blog2.png)
-![Blog post desktop](./blogpost1.png)
-![Blog post mobile](./blogpost2.png)
+- A blog
 
 ### Target Audience
 
@@ -47,3 +25,27 @@ The target audience for this website is primarily people looking to have a websi
 ### Tech stack
 
 This website was built in HTML/CSS/Javascript. Testing was conducted using Chrome dev tools. Version control is carried out using Github. It is deployed via Netlify.
+
+### License
+
+MIT License
+
+Copyright (c) 2021 Jordan Wegener
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

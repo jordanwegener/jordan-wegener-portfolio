@@ -2,6 +2,8 @@
 
 # Readme
 
+This website is hosted at https://jordanwegener.dev
+
 ## Website Description
 
 ### Purpose

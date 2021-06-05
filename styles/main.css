@@ -5,9 +5,78 @@
   --footer-height: 70px;
   --container-background: rgba(0, 0, 0, 0.5);
   --border-radius: 2.5px;
+  --fade-in: 2s;
 }
 
 /* General/reused components */
+
+/* Animations */
+
+.fade-in-text {
+  animation: fadeIn linear 1.5s;
+  -webkit-animation: fadeIn linear 1.5s;
+  -moz-animation: fadeIn linear 1.5s;
+  -o-animation: fadeIn linear 1.5s;
+  -ms-animation: fadeIn linear 1.5s;
+}
+
+.fade-delay {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.fade-in-image {
+  animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+  -moz-animation: fadeIn 1.5s;
+  -o-animation: fadeIn 1.5s;
+  -ms-animation: fadeIn 1.5s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
 
 /* Set some parameters for all elements to prevent any weird stuff */
 
@@ -40,6 +109,8 @@ strong {
 h1 {
   font-size: 1.5em;
   text-align: center;
+  animation: fade;
+  animation-duration: 1s;
 }
 
 h2 {
@@ -207,6 +278,7 @@ a:hover {
 
 .project-link {
   color: #fcff7a;
+  margin: 0;
 }
 
 /* Reusable project image component - image component */
